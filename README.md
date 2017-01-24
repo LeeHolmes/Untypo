@@ -18,3 +18,4 @@ Untypo lets you generate a word list of possible typos, so that you can then app
 - Password was held in a .NET System.SecureString, was saved via .ToString()
 - Spaces got added to the beginning or end (i.e. through pasting)
 - Had an alternate keyboard layout engaged
+- Input was truncated
