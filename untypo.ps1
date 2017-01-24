@@ -206,8 +206,18 @@ $globalTypoPatterns = @(
                 }
             }
         }
-    }
-        
+    },
+
+    ## User input got truncated to some maximum length
+    {
+        param($UserInput)
+
+        for($truncation = 0; $truncation -lt $UserInput.Length; $truncation++)
+        {
+            $UserInput.Substring(0, $truncation)
+        }
+    }    
+      
 )
 
 ## Emit the input as guessed by the user.
